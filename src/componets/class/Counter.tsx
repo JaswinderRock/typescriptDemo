@@ -15,7 +15,8 @@ export class Counter extends Component<CounterProps, CounterState> {
     render() {
         return (
             <div>
-                <button onClick={this.handleClick}>Increment</button>
+                <button style={{ color: "white", background: 'blue', height: '3vh', marginBottom: '20px' }} onClick={this.handleClick}>Increment</button>
+                <br />
                 {this.props.message} {this.state.count}
             </div>
         )
