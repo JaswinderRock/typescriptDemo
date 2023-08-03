@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
-import { NewNoteInput } from './componets/class/NewNoteInput';
-import { NotesState } from './componets/class/notesReducer';
-import { addNote } from './componets/class/action';
-import { Counter } from './componets/class/Counter';
-import Login from './componets/class/Login';
+import { NewNoteInput } from './screen/NewNoteInput';
+import { NotesState } from './componets/redux/notesReducer';
+import { addNote } from './componets/redux/action';
+import { Counter } from './screen/Counter';
+import Login from './screen/Login';
 
 function App() {
   const notes = useSelector<NotesState, NotesState["notes"]>(state => state.notes)
