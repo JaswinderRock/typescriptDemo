@@ -14,10 +14,13 @@ export class Counter extends Component<CounterProps, CounterState> {
     }
     render() {
         return (
-            <div>
-                <button style={{ color: "white", background: 'blue', height: '3vh', marginBottom: '20px' }} onClick={this.handleClick}>Increment</button>
-                <br />
-                {this.props.message} {this.state.count}
+            <div style={{ display: 'flex' }}>
+                <div style={{ margin: 'auto', marginTop: '20px' }}>
+                    <button style={{ display: 'flex', margin: 'auto', borderRadius: '4px', textAlign: 'center', color: "white", background: 'blue', padding: '10px', fontSize: '24px', }} onClick={this.handleClick}>Increment</button>
+                    <div style={{ marginTop: '30px', fontSize: '20px' }}>
+                        {this.props.message} {this.state.count}
+                    </div>
+                </div>
             </div>
         )
     }

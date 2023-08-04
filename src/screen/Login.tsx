@@ -1,10 +1,21 @@
 import React from 'react';
-class Login extends React.Component {
-    state = {
-        email: '',
-        password: '',
-        remeberMe: true
+
+type TypeProps = {}
+type TypeState = {
+    email: string,
+    password: string,
+    remeberMe: boolean,
+}
+class Login extends React.Component<TypeProps, TypeState> {
+    constructor(props: TypeProps) {
+        super(props);
+        this.state = {
+            email: '',
+            password: '',
+            remeberMe: true,
+        }
     }
+
     render() {
         const { email, password, remeberMe } = this.state;
         return (
