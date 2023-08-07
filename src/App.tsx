@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Counter } from './screen/Counter';
 import Login from './screen/Login';
-import { Note } from './Note';
+import { Note } from './screen/Note';
 export class App extends Component {
   render() {
     return (
@@ -14,6 +14,7 @@ export class App extends Component {
         </Routes>
         <nav>
           <ul>
+            <h1>React with TypeSript </h1>
             <li>
               <Link style={{ fontSize: '24px' }} to="counter">Counter</Link>
             </li>

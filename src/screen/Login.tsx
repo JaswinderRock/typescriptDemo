@@ -26,6 +26,7 @@ class Login extends React.Component<TypeProps, TypeState> {
                         <label style={{ fontSize: '20px' }}>Email *</label>
                         <br />
                         <input
+                            id='data-test-email'
                             style={{ marginTop: '10px', height: '3vh' }}
                             placeholder='Please enter  your email'
                             type='email'
@@ -61,6 +62,7 @@ class Login extends React.Component<TypeProps, TypeState> {
                         <button type='submit' style={{ color: 'white', background: 'blue', marginTop: '16px', height: '5vh', width: '60%' }}>Submit</button>
                     </div>
                 </form>
+                <div>{this.state.email}</div>
             </div>
         )
     }
