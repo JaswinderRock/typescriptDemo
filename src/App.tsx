@@ -3,6 +3,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import { Counter } from './screen/Counter';
 import Login from './screen/Login';
 import { Note } from './screen/Note';
+import NewButton from './screen/NewButton';
 export class App extends Component {
   render() {
     return (

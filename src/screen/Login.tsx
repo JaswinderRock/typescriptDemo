@@ -21,12 +21,12 @@ class Login extends React.Component<TypeProps, TypeState> {
         return (
             <div style={{ display: 'flex' }}>
                 <form onSubmit={this.onSubmit} style={{ margin: 'auto', padding: '40px', marginTop: '50px', background: '#dadada', border: '2px solid #0000FF ', color: 'blue' }}>
-                    <h3 style={{ fontSize: '24px' }}>Login</h3>
+                    <h3 style={{ fontSize: '24px' }} id='test-id-login'>Login</h3>
                     <div>
                         <label style={{ fontSize: '20px' }}>Email *</label>
                         <br />
                         <input
-                            id='data-test-email'
+                            test-id='data-test-email'
                             style={{ marginTop: '10px', height: '3vh' }}
                             placeholder='Please enter  your email'
                             type='email'
@@ -59,7 +59,7 @@ class Login extends React.Component<TypeProps, TypeState> {
                     </div>
                     <br />
                     <div>
-                        <button type='submit' style={{ color: 'white', background: 'blue', marginTop: '16px', height: '5vh', width: '60%' }}>Submit</button>
+                        <button type='submit' role='button' id="submit-button" style={{ color: 'white', background: 'blue', marginTop: '16px', height: '5vh', width: '60%' }}>Submit</button>
                     </div>
                 </form>
                 <div>{this.state.email}</div>
